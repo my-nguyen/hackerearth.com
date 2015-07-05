@@ -1,0 +1,46 @@
+The Humans are at war against a very powerful alien race that invaded our solar
+system. The human army has n soldiers. The soldiers are numbers from 1 to n. The
+army has a superiority hierarchy. Every soldier has one immediate superior. The
+superior of a superior of a soldier is also a superior to that soldier. So, a
+soldier may have one or more superiors but only one immediate superior.
+
+When a soldier has to pass a message to his superior, he cannot do so directly.
+If a soldier ‘x’ has to pass a message to his superior ‘y’, ‘x’ has to first
+pass the message to his immediate superior who will review the message. After
+reviewing, the immediate superior of ‘x’ will pass on the message to ‘y’
+following the same procedure described above.
+
+Given the two soldiers, ’x’ and ‘y’, your job is to determine how many reviews
+will take place until the message reaches ‘y’.
+
+NOTE: Among all soldiers there is one soldier who does not have any superior.
+He is the commander of the whole army.
+
+Input:
+
+The first line of the input contains t, the number of test cases.
+The first line of each test case contains n, the number of soldiers. The next
+line contains n space separated integers. The ith integer represents the
+immediate superior of the ith soldier.
+
+The immediate superior of the commander of the army will be '0'.
+
+The third line of each test case contains an integer q, the number of queries.
+Each of the next q lines contain the two integers, x and y (x!=y).
+
+Output:
+
+For each query output a single integer on a line that is the number of reviews
+that’ll take place before the message reaches from ‘x’ to ‘y’.
+In case ‘y’ is not the superior of ‘x’, print -1.
+
+Constraints:
+1<=t<=10
+2<=n<=100000
+1<=q<=100000
+1<=x,y<=n
+
+It is guaranteed that the commander of the army is a superior of all soldiers.
+
+WARNING: Large Input data. Be careful with certain languages.
+( For C++ users, use 'scanf' instead of 'cin')

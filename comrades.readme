@@ -1,0 +1,4 @@
+Currently the solution is correct but failed to make it in the time allotted;
+it is taking too long with certain data, e.g. more than 7 minutes for the 3rd
+test case of Input #2 which has 100,000 soldiers. Need to improve performance
+on this!!!

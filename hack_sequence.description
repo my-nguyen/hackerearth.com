@@ -1,0 +1,31 @@
+Hack sequence of IndiaHacks-2014 if given as below
+Hi = 2014*Hi-1 + 69*Hi-2 for (i>2)
+Hi = 1 for (i<=2)
+
+Given n, you need to find nth term of Hack sequence modulo 109 + 7 i.e Hn % (109 + 7).
+
+This is a Code golf problem. You need to write code with minimum number of characters.
+
+Input:
+First line contain T, the number of test cases. Each of next T lines contain an
+integer n.
+
+Output:
+For each test case output a single integer which is Hn modulo 109 + 7.
+
+Constraints :
+1 ≤ T ≤ 103
+1 ≤ n ≤ 1015
+
+Scoring:
+If your program passes all the testcases, the score will be assigned according
+to the following formula:
+
+    score = 0.1
+    num_chars = length of source code
+    if (num_chars < 1500):
+        Score = (1500 - num_chars) / 15
+
+You can understand that you have to reach as close to 100 as possible. Also your
+code needs to pass all the testcases before a score can be assigned, there is no
+partial scoring here. Have fun :)
